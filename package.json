@@ -1,8 +1,8 @@
 {
-  "name": "@minimal/material-kit-react",
-  "author": "minimals.cc",
-  "version": "3.5.0",
-  "description": "Simple React Scripts & Typescript",
+  "name": "fourdim-tool-page",
+  "author": "daxiongya",
+  "version": "0.0.1",
+  "description": "Fourdim web3 tool page",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .ts,.tsx ./src",
