@@ -47,6 +47,11 @@
         "object": true,
         "array": false
       }
-    ]
+    ],
+    "@typescript-eslint/return-await": [
+      1,
+      "in-try-catch"
+    ],
+    "@typescript-eslint/lines-between-class-members": [0]
   }
 }

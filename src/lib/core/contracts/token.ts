@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import BaseContract from "./base";
-import * as ABI from '../../constants/abi';
+import * as ABI from '../constants/abi';
 
 class TokenContract extends BaseContract {
 

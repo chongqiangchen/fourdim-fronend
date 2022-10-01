@@ -40,6 +40,12 @@ export default function Router() {
           ]
         },
         {
+          path: 'nft',
+          children: [
+            {path: 'nft-multi-transfer', element: <NftMultiTransfer />},
+          ]
+        },
+        {
           path: 'user',
           children: [
             { element: <Navigate to="/dashboard/user/four" replace />, index: true },
@@ -66,7 +72,11 @@ const PageFive = Loadable(lazy(() => import('../pages/PageFive')));
 const PageSix = Loadable(lazy(() => import('../pages/PageSix')));
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));
 
+// token
 const SingleTokenMultiTransfer = Loadable(lazy(() => import('../pages/token/SingleTokenMultiTransfer')));
 const SingleAddressMultiTransfer = Loadable(lazy(() => import('../pages/token/SingleAddressMultiTransfer')));
 const MultiAccountTokenTransfer = Loadable(lazy(() => import('../pages/token/MultiAccountTokenTransfer')));
+
+// nft
+const NftMultiTransfer = Loadable(lazy(() => import('../pages/nft/NftMultiTransfer')));
 const PageHome = Loadable(lazy(() => import('../pages/PageHome')));

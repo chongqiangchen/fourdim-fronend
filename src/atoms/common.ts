@@ -1,4 +1,4 @@
-import { ERC20_ABI, ERC721_ABI, TOKEN_HELPER_ABI } from "src/constants/abi";
+import { ERC20_ABI, ERC721_ABI, TOKEN_HELPER_ABI, NFT_BNX, NFT_BNX_INFO } from "src/constants/abi";
 import {atom, selector} from 'recoil';
 
 // const NODE_ENV = process.env.NODE_ENV;
@@ -9,6 +9,8 @@ export const AbiState = atom({
         erc20: ERC20_ABI,
         erc721: ERC721_ABI,
         tokenHelper: TOKEN_HELPER_ABI,
+        nftBNX: NFT_BNX,
+        nftBNXInfo: NFT_BNX_INFO,
     },
 })
 

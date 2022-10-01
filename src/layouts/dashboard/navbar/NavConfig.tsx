@@ -1,4 +1,5 @@
 // components
+import { PATH_DASHBOARD } from 'src/routes/paths';
 import SvgIconStyle from '../../../components/SvgIconStyle';
 
 // ----------------------------------------------------------------------
@@ -23,6 +24,13 @@ const navConfig = [
       { title: '单币多账号转移', path: '/dashboard/token/single-token-multi-transfer', icon: ICONS.ecommerce },
       { title: '单号多货币转移', path: '/dashboard/token/single-address-multi-transfer', icon: ICONS.ecommerce },
       { title: '多号货币归集', path: '/dashboard/token/multi-account-token-transfer', icon: ICONS.ecommerce },
+    ],
+  },
+
+  {
+    subheader: 'NFT',
+    items: [
+      { title: '单币多账号转移', path: PATH_DASHBOARD.nft.nftMultiTransfer, icon: ICONS.ecommerce },
     ],
   },
 

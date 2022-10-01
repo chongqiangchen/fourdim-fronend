@@ -32,6 +32,9 @@ export const PATH_DASHBOARD = {
     singleAddressMultiTransfer: path(ROOTS_DASHBOARD, '/token/single-address-multi-transfer'),
     multiAccountTokenTransfer: path(ROOTS_DASHBOARD, '/token/multi-account-token-transfer'),
   },
+  nft: {
+    nftMultiTransfer: path(ROOTS_DASHBOARD, '/nft/nft-multi-transfer'),
+  }
 };
 
 // export const PATH_DOCS = 'https://docs-minimals.vercel.app/introduction';
