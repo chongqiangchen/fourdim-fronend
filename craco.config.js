@@ -1,18 +1,14 @@
-const webpack = require('webpack');
+const cracoAlias = require("craco-alias");
 
 module.exports = {
-    configure: {
-      resolve: {
-        fallback: {
-          buffer: require.resolve('buffer'),
-        },
-      },
-    },
-    plugins: {
-      add: [
-        new webpack.ProvidePlugin({
-          Buffer: ['buffer', 'Buffer'],
-        }),
-      ],
-    },
-}
+  plugins: [
+    {
+      plugin: cracoAlias,
+      options: {
+        unsafeAllowModulesOutsideOfSrc: true,
+        source: "tsconfig",
+        tsConfigPath: "./tsconfig.json",
+      }
+    }
+  ]
+};

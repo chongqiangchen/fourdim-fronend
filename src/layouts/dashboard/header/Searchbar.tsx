@@ -166,7 +166,7 @@ function Searchbar() {
               noOptionsText={<SearchNotFound searchQuery={searchQuery} />}
               options={allItems.sort((a, b) => -b.group.localeCompare(a.group))}
               groupBy={(option) => option.group}
-              getOptionLabel={(option) => option.path}
+              getOptionLabel={(option: any) => option.path}
               isOptionEqualToValue={(option, value) => option.path === value.path}
               filterOptions={createFilterOptions({
                 matchFrom: 'start',

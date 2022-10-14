@@ -15,7 +15,7 @@ const NftMultiTransfer = () => {
                     heading="NFT批量转移"
                     links={[
                         { name: '操作区', href: PATH_DASHBOARD.root },
-                        { name: '货币', href: PATH_DASHBOARD.token.singleTokenMultiTransfer },
+                        { name: 'NFT', href: PATH_DASHBOARD.token.singleTokenMultiTransfer },
                         { name: '批量操作' },
                     ]}
                 />

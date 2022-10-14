@@ -3,6 +3,7 @@ import BaseContract from "./base";
 import * as ABI from '../constants/abi';
 import { multicallv2 } from "fourdim-web3-hooks";
 
+// @ts-ignore
 const EmptyGetTokenInfosFn = async (tokenIds: any[], contract: Contract) => ([]);
 const EmptyGetTokenInfoFn = async (tokenId: any, contract: Contract) => {
     const uri = await contract.tokenURI(tokenId);

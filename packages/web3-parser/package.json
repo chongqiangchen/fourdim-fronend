@@ -1,0 +1,30 @@
+{
+  "name": "@fourdimtool/web3-parser",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.mjs",
+  "scripts": {
+    "lint": "eslint src test",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "start": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "prepublishOnly": "yarn run build"
+  },
+  "peerDependencies": {
+    "ethers": "^5.0.0"
+  },
+  "dependencies": {
+    "@fourdimtool/web3-abi": "*"
+  },
+  "devDependencies": {
+    "tsup": "^5.10.1",
+    "@fourdimtool/tsconfig": "*",
+    "ethers": "^5.6.9"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}

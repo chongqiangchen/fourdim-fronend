@@ -1,0 +1,10 @@
+{
+    "name": "@fourdimtool/tsconfig",
+    "version": "0.0.1",
+    "license": "MIT",
+    "files": [
+      "base.json",
+      "lib.json",
+      "react-lib.json"
+    ]
+  }

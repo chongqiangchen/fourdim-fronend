@@ -1,4 +1,4 @@
-import { Box, IconButton, Table, TableBody, TableCell, TableContainer, TablePagination, TableRow, TextField } from "@mui/material";
+import { Box, Table, TableBody, TableCell, TableContainer, TablePagination, TableRow } from "@mui/material";
 import { uniqueId } from "lodash";
 import { TableHeadCustom } from "src/components/table";
 import useTable from "src/hooks/useTable";
@@ -29,7 +29,7 @@ interface Props {
     columns: any[],
 }
 
-export default function NftTable({data}: Props) {
+export default function NftTable({ data, columns }: Props) {
     const {
         page,
         rowsPerPage,
@@ -40,7 +40,7 @@ export default function NftTable({data}: Props) {
     return (
         <TableContainer>
             <Table>
-                <TableHeadCustom headLabel={TABLE_HEAD} />
+                <TableHeadCustom headLabel={columns || TABLE_HEAD} />
 
                 <TableBody>
                     {(rowsPerPage > 0
@@ -48,7 +48,7 @@ export default function NftTable({data}: Props) {
                         : data
                     ).map((row, index) => (
                         <TokenTableRow
-                            columns={TABLE_HEAD}
+                            columns={columns || TABLE_HEAD}
                             key={uniqueId()}
                             rowIndex={index}
                             row={row}
@@ -81,8 +81,9 @@ type TokenTableRowProps = {
 };
 
 function TokenTableRow({ row, rowIndex, columns }: TokenTableRowProps) {
+    console.log(columns);
 
-    const InnerCell = (column: any) => {
+    const InnerCell = ({ column }: any) => {
         const value = row[column.id];
 
         if (column.render) {
@@ -96,13 +97,11 @@ function TokenTableRow({ row, rowIndex, columns }: TokenTableRowProps) {
 
     return (
         <TableRow>
-            {columns.map((column) => {
-                return (
+            {columns.map((column) => (
                     <TableCell key={column.key ? row[column.key] : uniqueId()}>
                         <InnerCell column={column} />
                     </TableCell>
-                )
-            })}
+                ))}
         </TableRow>
     )
 }

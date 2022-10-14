@@ -1,7 +1,7 @@
 import { Contract } from "ethers";
 import { useEffect, useRef, useState } from "react";
 import { useSigner } from "wagmi";
-import { NftContract } from "src/lib/core";
+import { NftContract } from "@fourdim/web3-core";
 
 export interface nftHookProps {
     nftAddresses: string[];

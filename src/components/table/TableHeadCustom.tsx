@@ -61,7 +61,6 @@ export default function TableHeadCustom({
             />
           </TableCell>
         )}
-
         {headLabel.map((headCell) => (
           <TableCell
             key={headCell.id}

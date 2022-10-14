@@ -34,15 +34,15 @@ export default function Router() {
         {
           path: 'token',
           children: [
-            {path: 'single-token-multi-transfer', element: <SingleTokenMultiTransfer />},
-            {path: 'single-address-multi-transfer', element: <SingleAddressMultiTransfer />},
-            {path: 'multi-account-token-transfer', element: <MultiAccountTokenTransfer />},
+            { path: 'single-token-multi-transfer', element: <SingleTokenMultiTransfer /> },
+            { path: 'single-address-multi-transfer', element: <SingleAddressMultiTransfer /> },
+            { path: 'multi-account-token-transfer', element: <MultiAccountTokenTransfer /> },
           ]
         },
         {
           path: 'nft',
           children: [
-            {path: 'nft-multi-transfer', element: <NftMultiTransfer />},
+            { path: 'nft-multi-transfer', element: <NftMultiTransfer /> },
           ]
         },
         {
@@ -67,6 +67,9 @@ export default function Router() {
   ]);
 }
 
+// home
+const PageHome = Loadable(lazy(() => import('../pages/home/index')));
+
 // Dashboard
 const PageFive = Loadable(lazy(() => import('../pages/PageFive')));
 const PageSix = Loadable(lazy(() => import('../pages/PageSix')));
@@ -79,4 +82,3 @@ const MultiAccountTokenTransfer = Loadable(lazy(() => import('../pages/token/Mul
 
 // nft
 const NftMultiTransfer = Loadable(lazy(() => import('../pages/nft/NftMultiTransfer')));
-const PageHome = Loadable(lazy(() => import('../pages/PageHome')));

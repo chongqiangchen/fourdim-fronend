@@ -1,34 +1,21 @@
 {
+  "extends": "./packages/tsconfig/react-lib.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "es5",
-    "lib": [
-      "es6",
-      "dom"
-    ],
-    "strict": true,
-    "noEmit": true,
-    "allowJs": true,
-    "module": "esnext",
-    "jsx": "react-jsx",
-    "skipLibCheck": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "strictNullChecks": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "node",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
-    "useUnknownInCatchVariables": false,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "target": "es5",
+    "paths": {}
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
+    "**/*.json", "packages/web3-abi/src/ERC20.ts",
   ],
   "exclude": [
     "node_modules"
-  ],
+  ]
 }

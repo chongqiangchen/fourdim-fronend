@@ -52,6 +52,8 @@
       1,
       "in-try-catch"
     ],
-    "@typescript-eslint/lines-between-class-members": [0]
+    "@typescript-eslint/lines-between-class-members": [
+      0
+    ]
   }
 }
