@@ -1,6 +1,6 @@
 import { BigNumber, Contract, ethers } from "ethers";
 import BaseContract from "./base";
-import * as ABI from '../constants/abi';
+import * as ABI from '@fourdimtool/web3-abi';
 import { multicallv2 } from "fourdim-web3-hooks";
 
 // @ts-ignore
@@ -12,7 +12,7 @@ const EmptyGetTokenInfoFn = async (tokenId: any, contract: Contract) => {
 };
 
 const DefaultOptions = {
-    abi: ABI.ERC721_ABI,
+    abi: ABI.ERC721,
     getTokenInfosFn: EmptyGetTokenInfosFn,
     getTokenInfoFn: EmptyGetTokenInfoFn,
 }
@@ -29,7 +29,7 @@ class NftContract extends BaseContract {
     ) {
         super(address, options.abi || DefaultOptions.abi, signer);
         this.options = {
-            abi: options.abi || ABI.ERC721_ABI,
+            abi: options.abi || ABI.ERC721,
             getTokenInfosFn: options.getTokenInfosFn || EmptyGetTokenInfosFn,
             getTokenInfoFn: options.getTokenInfoFn || EmptyGetTokenInfoFn,
         };
