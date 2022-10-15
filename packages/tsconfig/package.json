@@ -1,6 +1,6 @@
 {
   "name": "@fourdimtool/tsconfig",
-  "version": "0.0.1-alpha.11+d0df68f",
+  "version": "0.0.1-alpha.12+8901835",
   "license": "MIT",
   "files": [
     "base.json",
@@ -10,5 +10,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "d0df68f171e820f4b16587205974b4bc003e9380"
+  "gitHead": "8901835b09b6186a933fdf89996f3de4fcbf7cdb"
 }
