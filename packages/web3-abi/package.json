@@ -1,8 +1,11 @@
 {
   "name": "@fourdimtool/web3-abi",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.11+d0df68f",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
@@ -14,7 +17,8 @@
     "prepublishOnly": "yarn run build"
   },
   "devDependencies": {
-    "tsup": "^5.10.1",
-    "@fourdimtool/tsconfig": "*"
-  }
+    "@fourdimtool/tsconfig": "*",
+    "tsup": "^5.10.1"
+  },
+  "gitHead": "d0df68f171e820f4b16587205974b4bc003e9380"
 }
