@@ -15,7 +15,8 @@
     "eject": "craco eject",
     "clear-all": "rm -rf build node_modules",
     "re-start": "rm -rf build node_modules && yarn install && yarn start",
-    "re-build": "rm -rf build node_modules && yarn install && yarn build"
+    "re-build": "rm -rf build node_modules && yarn install && yarn build",
+    "publish": "lerna publish --canary preminor"
   },
   "eslintConfig": {
     "extends": [
