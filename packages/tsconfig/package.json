@@ -2,6 +2,9 @@
   "name": "@fourdimtool/tsconfig",
   "version": "0.0.1-alpha.12+8901835",
   "license": "MIT",
+  "scripts": {
+    "build": "echo 'nothing to build'"
+  },
   "files": [
     "base.json",
     "lib.json",
