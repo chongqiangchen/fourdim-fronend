@@ -13,7 +13,7 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "**/*.json", "packages/web3-abi/src/ERC20.ts",
+    "**/*.json"
   ],
   "exclude": [
     "node_modules"

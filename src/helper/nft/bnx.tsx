@@ -159,7 +159,7 @@ export default {
     {
       id: 'tokenId',
       label: 'Token ID',
-      render: (value) => truncation(value),
+      render: (value: any) => truncation(value),
       minWidth: 100,
     },
     {
@@ -185,7 +185,7 @@ export default {
     {
       id: 'prop',
       label: '属性',
-      render: (value) => (
+      render: (value: any) => (
           <div>
             <span>力量：{value.Power} |</span>
             <span>敏捷：{value.Agile} |</span>

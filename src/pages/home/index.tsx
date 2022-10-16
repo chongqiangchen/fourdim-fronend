@@ -100,13 +100,13 @@ export default function UserList() {
   };
 
   const handleDeleteRow = (id: string) => {
-    const deleteRow = tableData.filter((row) => row.id !== id);
+    const deleteRow = tableData.filter((row: any) => row.id !== id);
     setSelected([]);
     setTableData(deleteRow);
   };
 
   const handleDeleteRows = (selected: string[]) => {
-    const deleteRows = tableData.filter((row) => !selected.includes(row.id));
+    const deleteRows = tableData.filter((row: any) => !selected.includes(row.id));
     setSelected([]);
     setTableData(deleteRows);
   };
@@ -237,7 +237,7 @@ export default function UserList() {
                   onSelectAllRows={(checked) =>
                     onSelectAllRows(
                       checked,
-                      tableData.map((row) => row.id),
+                      tableData.map((row: any) => row.id),
                     )
                   }
                   actions={
@@ -261,7 +261,7 @@ export default function UserList() {
                   onSelectAllRows={(checked) =>
                     onSelectAllRows(
                       checked,
-                      tableData.map((row) => row.id),
+                      tableData.map((row: any) => row.id),
                     )
                   }
                 />
