@@ -17,13 +17,13 @@
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
-    "@fourdimtool/web3-abi": "*",
-    "@fourdimtool/web3-core": "*",
-    "@fourdimtool/web3-parser": "*",
+    "@fourdimtool/web3-abi": "latest",
+    "@fourdimtool/web3-core": "latest",
+    "@fourdimtool/web3-parser": "latest",
     "evm": "^0.2.0"
   },
   "devDependencies": {
-    "@fourdimtool/tsconfig": "*",
+    "@fourdimtool/tsconfig": "latest",
     "tsup": "^5.10.1"
   },
   "engines": {
