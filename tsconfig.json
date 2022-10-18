@@ -7,10 +7,7 @@
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration": true,
     "resolveJsonModule": true,
-    "target": "es5",
-    "paths":  {
-      "@fourdimtool/*": ["./packages/*"]
-    }
+    "target": "es5"
   },
   "include": [
     "src/**/*.ts",

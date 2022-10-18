@@ -1,6 +1,6 @@
 {
   "name": "@fourdimtool/web3-core",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.12+8901835",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -9,7 +9,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "module": "dist/index.mjs",
   "scripts": {
     "lint": "eslint src test",
     "build": "tsup src/index.ts --format esm,cjs --dts",
@@ -17,12 +16,12 @@
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
-    "@fourdimtool/web3-abi": "latest",
-    "@fourdimtool/web3-parser": "latest",
+    "@fourdimtool/web3-abi": "workspace:*",
+    "@fourdimtool/web3-parser": "workspace:*",
     "evm": "^0.2.0"
   },
   "devDependencies": {
-    "@fourdimtool/tsconfig": "latest",
+    "@fourdimtool/tsconfig": "workspace:*",
     "tsup": "^5.10.1"
   },
   "engines": {
