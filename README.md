@@ -1,10 +1,12 @@
-## Fourdim Web3 Tool Page
+## Fourdim Frontend
 
-> 区块链工具页面，目前仅支持BSC - 以学习技术为主，当前项目使用Pnpm Workspace和Nx构建该monorepo仓库。
+> 区块链工具页面，目前仅支持BSC - 以学习技术为主
+
+当前项目使用Pnpm Workspace和Nx构建该monorepo仓库。
 
 ### 正在做的事情
 
-- [ ] fourdim-web3-hooks仓库拆分进@fourdimtool/*各个仓库下
+- [ ] `fourdim-web3-hooks`仓库拆分进`@fourdimtool/*`各个仓库下
 - [ ] 完善各个仓库的npm包发布工具脚本
 - [ ] 部署至git pages
 
