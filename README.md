@@ -1,6 +1,6 @@
 ## Fourdim Web3 Tool Page
 
-> 大部分功能优先开发服务于BSC链的用户，后面在进行其他链的扩展
+> 区块链工具页面，目前仅支持BSC - 以学习技术为主，当前项目使用Pnpm Workspace和Nx构建该monorepo仓库。
 
 ### 正在做的事情
 
