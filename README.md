@@ -1,11 +1,18 @@
 ## Fourdim Web3 Tool Page
 
-### Quick
 > 大部分功能优先开发服务于BSC链的用户，后面在进行其他链的扩展
 
+### 正在做的事情
+
+- [] fourdim-web3-hooks仓库拆分进@fourdimtool/*各个仓库下
+- [] 完善各个仓库的npm包发布工具脚本
+- [] 部署至git pages
+
+### 开发本项目相关
 ```
-    yarn
-    yarn start
+    pnpm install
+    pnpm run lib:build
+    pnpm run toolpage:start
 ```
 
 ### 涉及自建库
@@ -14,8 +21,15 @@
 - [fourdim-web3-hooks](https://github.com/chongqiangchen/fourdim-web3-hooks)
 - [web3-block-helper](https://github.com/chongqiangchen/web3-block-helper)
 
+> 使用monorepo方式，将会将上面面部分内容移入当前仓库下，方便维护 (进行中)
+- [@fourdimtool/web3-abi]()
+- [@fourdimtool/web3-parser]()
+- [@fourdimtool/web3-core]()
+- [@fourdimtool/web3-react]()
+
 ### 构建计划
 
+- [x] 账户货币信息
 - [x] 货币
     - [x] 单币批量转移
     - [x] 单号批量转移
