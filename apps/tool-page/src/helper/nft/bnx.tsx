@@ -1,7 +1,6 @@
-import { BigNumber, BigNumberish, Contract, utils } from 'ethers';
+import { BigNumber, Contract } from 'ethers';
 import { multicallv2 } from 'fourdim-web3-hooks';
-import { truncation } from '../../utils/truncation';
-import { Divider } from '@mui/material';
+import { truncation } from "@/utils/truncation";
 import { NFT_BNX_INFO } from "@/constants/abi";
 
 const ADDRESS = {

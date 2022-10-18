@@ -18,7 +18,11 @@
   "dependencies": {
     "@fourdimtool/web3-abi": "workspace:*",
     "@fourdimtool/web3-parser": "workspace:*",
-    "evm": "^0.2.0"
+    "evm": "^0.2.0",
+    "ethers": "^5.7.1",
+    "lodash": "^4.17.21",
+    "fourdim-web3-hooks": "^0.0.1-alpha.12",
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "@fourdimtool/tsconfig": "workspace:*",

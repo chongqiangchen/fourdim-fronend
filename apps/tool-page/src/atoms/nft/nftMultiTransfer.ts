@@ -1,4 +1,4 @@
-import { atom, AtomEffect } from "recoil";
+import { atom } from "recoil";
 import { COMMON_NFT_NAME, COMMON_NFT_NAME_AND_HELPER_MAP, SUGGESTION_LIST } from "@/helper/nft";
 import { NftHelper, NftInfoItem } from "@/pages/token/types/nft";
 

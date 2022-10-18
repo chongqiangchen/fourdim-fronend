@@ -20,7 +20,9 @@
     "@fourdimtool/web3-abi": "workspace:*",
     "@fourdimtool/web3-core": "workspace:*",
     "@fourdimtool/web3-parser": "workspace:*",
-    "evm": "^0.2.0"
+    "evm": "^0.2.0",
+    "lodash": "^4.17.21",
+    "ethers": "^5.4.6"
   },
   "devDependencies": {
     "@fourdimtool/tsconfig": "workspace:*",

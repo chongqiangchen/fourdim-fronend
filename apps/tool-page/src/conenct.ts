@@ -1,7 +1,5 @@
 import {
-    WagmiConfig,
     createClient,
-    defaultChains,
     configureChains,
 } from 'wagmi'
 

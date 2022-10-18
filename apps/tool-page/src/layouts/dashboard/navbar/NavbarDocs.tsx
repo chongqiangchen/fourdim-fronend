@@ -1,7 +1,6 @@
 // @mui
-import { Stack, Button, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
 // assets
-import { DocIllustration } from '../../../assets';
 
 // ----------------------------------------------------------------------
 

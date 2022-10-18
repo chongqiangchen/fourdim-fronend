@@ -25,7 +25,7 @@ type Props = {
 };
 
 export default function NavbarAccount({ isCollapse }: Props) {
-  const { address, connector, isConnected } = useAccount()
+  const { address, isConnected } = useAccount()
   const { data: ensName } = useEnsName({ address })
 
 

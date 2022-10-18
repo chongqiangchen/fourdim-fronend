@@ -20,7 +20,9 @@
     "ethers": "^5.0.0"
   },
   "dependencies": {
-    "@fourdimtool/web3-abi": "workspace:*"
+    "@fourdimtool/web3-abi": "workspace:*",
+    "ethers": "^5.7.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@fourdimtool/tsconfig": "workspace:*",

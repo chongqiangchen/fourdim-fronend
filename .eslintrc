@@ -23,7 +23,6 @@
   },
   "rules": {
     "react/jsx-key": 2,
-    "arrow-body-style": 1,
     "import/no-duplicates": 1,
     "react/self-closing-comp": 1,
     "@typescript-eslint/no-shadow": 0,

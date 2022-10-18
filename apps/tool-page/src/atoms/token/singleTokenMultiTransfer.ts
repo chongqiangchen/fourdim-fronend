@@ -1,4 +1,4 @@
-import { atom, AtomEffect } from "recoil";
+import { atom } from "recoil";
 import { AddressInfoItem } from "@/pages/token/types/multi";
 
 // STMT => Single Token Multi Transfer

@@ -1,5 +1,5 @@
 import { Box, BoxProps, Button } from "@mui/material";
-import { ChangeEvent, ReactNode, useRef, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 
 interface Props extends BoxProps {
   accept?: string;
@@ -8,16 +8,16 @@ interface Props extends BoxProps {
 }
 
 export default function SingleFileUpload(props: Props) {
-  const { accept, sx, buttonName = '上传文件', onFileUpdate, ...others } = props;
+  const { accept, sx, buttonName = "上传文件", onFileUpdate, ...others } = props;
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [file, setFile] = useState<File>();
 
   const handleClick = () => {
     fileInputRef.current && fileInputRef.current.click();
-  }
+  };
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const {files} = e.target;
+    const { files } = e.target;
 
     const singleFile = files && files.length > 0 && files[0];
 
@@ -25,13 +25,13 @@ export default function SingleFileUpload(props: Props) {
       setFile(singleFile);
       onFileUpdate && onFileUpdate(singleFile);
     }
-  }
+  };
 
   return (
     <Box
       sx={{
         display: "inline-block",
-        ...sx,
+        ...sx
       }}
       {...others}
     >
@@ -42,10 +42,10 @@ export default function SingleFileUpload(props: Props) {
         type="file"
         accept={accept}
         ref={fileInputRef}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
         onChange={handleFileChange}
       />
     </Box>
-  )
+  );
 }
 

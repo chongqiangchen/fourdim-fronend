@@ -5,8 +5,8 @@
   "description": "Fourdim web3 tool page",
   "private": true,
   "scripts": {
-    "web3-core:start": "yarn workspace @fourdimtool/web3-core run start",
-    "all:build": "yarn workspaces run build"
+    "toolpage:start": "nx run fourdim-tool-page:start",
+    "lib:build": "nx run-many --target=build --projects=@fourdimtool/tsconfig,@fourdimtool/web3-abi,@fourdimtool/web3-parser,@fourdimtool/web3-core,@fourdimtool/web3-react --parallel"
   },
   "eslintConfig": {
     "extends": [
@@ -72,5 +72,8 @@
   "bugs": {
     "url": "https://github.com/chongqiangchen/web3-tool-page/issues"
   },
-  "homepage": "https://github.com/chongqiangchen/web3-tool-page#readme"
+  "homepage": "https://github.com/chongqiangchen/web3-tool-page#readme",
+  "dependencies": {
+    "ethers": "^5.7.1"
+  }
 }

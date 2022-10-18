@@ -23,8 +23,9 @@
   },
   "rules": {
     "react/jsx-key": 2,
-    "arrow-body-style": 1,
     "import/no-duplicates": 1,
+    "import/no-anonymous-default-export": 0,
+    "@typescript-eslint/no-unused-vars": 0,
     "react/self-closing-comp": 1,
     "@typescript-eslint/no-shadow": 0,
     "import/no-useless-path-segments": 1,
@@ -33,13 +34,6 @@
     "object-curly-spacing": [
       1,
       "always"
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      1,
-      {
-        "vars": "all",
-        "args": "none"
-      }
     ],
     "prefer-destructuring": [
       1,

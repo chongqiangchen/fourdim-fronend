@@ -7,7 +7,7 @@ import useResponsive from '../../../hooks/useResponsive';
 // utils
 import cssStyles from '../../../utils/cssStyles';
 // config
-import { HEADER, NAVBAR } from '../../../config';
+import { HEADER, NAVBAR } from "@/config";
 // components
 import Logo from '../../../components/Logo';
 import Iconify from '../../../components/Iconify';
@@ -15,9 +15,6 @@ import { IconButtonAnimate } from '../../../components/animate';
 //
 import Searchbar from './Searchbar';
 import AccountPopover from './AccountPopover';
-import LanguagePopover from './LanguagePopover';
-import ContactsPopover from './ContactsPopover';
-import NotificationsPopover from './NotificationsPopover';
 
 // ----------------------------------------------------------------------
 

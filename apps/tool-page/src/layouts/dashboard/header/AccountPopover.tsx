@@ -11,32 +11,32 @@ import { truncation } from "@/utils/truncation";
 
 // ----------------------------------------------------------------------
 
-const MENU_OPTIONS = [
-  {
-    label: 'Home',
-    linkTo: '/',
-  },
-  {
-    label: 'Profile',
-    linkTo: '/',
-  },
-  {
-    label: 'Settings',
-    linkTo: '/',
-  },
-];
+// const MENU_OPTIONS = [
+//   {
+//     label: 'Home',
+//     linkTo: '/',
+//   },
+//   {
+//     label: 'Profile',
+//     linkTo: '/',
+//   },
+//   {
+//     label: 'Settings',
+//     linkTo: '/',
+//   },
+// ];
 
 // ----------------------------------------------------------------------
 
 export default function AccountPopover() {
-  const { connect, connectors, error, isLoading, pendingConnector, isSuccess } = useConnect();
+  const { connect, connectors, error, isLoading, pendingConnector } = useConnect();
   const { disconnect } = useDisconnect();
 
   const { chain } = useNetwork()
   const { chains, pendingChainId, isLoading: switchNetworkLoading, switchNetwork } = useSwitchNetwork()
 
-  const { address, connector, isConnected } = useAccount()
-  const { data: ensAvatar } = useEnsAvatar({ addressOrName: address })
+  const { address, isConnected } = useAccount()
+  // const { data: ensAvatar } = useEnsAvatar({ addressOrName: address })
   const { data: ensName } = useEnsName({ address })
 
   const [open, setOpen] = useState<HTMLElement | null>(null);
