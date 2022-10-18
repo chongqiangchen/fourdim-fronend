@@ -1,4 +1,4 @@
-import { atom, atomFamily, selector, selectorFamily } from "recoil";
+import { atom, selector } from "recoil";
 import { getAccountTokenUsedList } from "@fourdimtool/web3-core";
 import { provider } from "@/conenct";
 

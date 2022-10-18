@@ -5,20 +5,20 @@ import Iconify from '../../../components/Iconify';
 // ----------------------------------------------------------------------
 
 type Props = {
-  optionsRole: string[];
+  optionsToken: Array<{value: string, label: string}>;
   filterName: string;
-  filterRole: string;
+  filterToken: string;
   onFilterName: (value: string) => void;
-  onFilterRole: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onFilterToken: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function UserTableToolbar(
+export default function TokenListTableToolbar(
   {
     filterName,
-    filterRole,
+    filterToken,
     onFilterName,
-    onFilterRole,
-    optionsRole,
+    onFilterToken,
+    optionsToken,
   }: Props,
 ) {
   return (
@@ -26,9 +26,9 @@ export default function UserTableToolbar(
       <TextField
         fullWidth
         select
-        label='Role'
-        value={filterRole}
-        onChange={onFilterRole}
+        label='货币'
+        value={filterToken}
+        onChange={onFilterToken}
         SelectProps={{
           MenuProps: {
             sx: { '& .MuiPaper-root': { maxHeight: 260 } },
@@ -39,10 +39,10 @@ export default function UserTableToolbar(
           textTransform: 'capitalize',
         }}
       >
-        {optionsRole.map((option) => (
+        {optionsToken.map((option) => (
           <MenuItem
-            key={option}
-            value={option}
+            key={option.value}
+            value={option.value}
             sx={{
               mx: 1,
               my: 0.5,
@@ -51,7 +51,7 @@ export default function UserTableToolbar(
               textTransform: 'capitalize',
             }}
           >
-            {option}
+            {option.label}
           </MenuItem>
         ))}
       </TextField>
@@ -60,7 +60,7 @@ export default function UserTableToolbar(
         fullWidth
         value={filterName}
         onChange={(event) => onFilterName(event.target.value)}
-        placeholder='Search user...'
+        placeholder='搜索货币名称...'
         InputProps={{
           startAdornment: (
             <InputAdornment position='start'>
