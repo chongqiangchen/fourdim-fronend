@@ -4,9 +4,9 @@
 
 ### 正在做的事情
 
-- [] fourdim-web3-hooks仓库拆分进@fourdimtool/*各个仓库下
-- [] 完善各个仓库的npm包发布工具脚本
-- [] 部署至git pages
+- [ ] fourdim-web3-hooks仓库拆分进@fourdimtool/*各个仓库下
+- [ ] 完善各个仓库的npm包发布工具脚本
+- [ ] 部署至git pages
 
 ### 开发本项目相关
 ```
