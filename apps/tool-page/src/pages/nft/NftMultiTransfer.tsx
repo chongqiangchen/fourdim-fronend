@@ -12,7 +12,7 @@ const NftMultiTransfer = () => {
         <Page title="NFT批量转移">
             <Container maxWidth={themeStretch ? false : 'lg'}>
                 <HeaderBreadcrumbs
-                    heading="NFT批量转移"
+                    heading="NFT批量转移（开发中）"
                     links={[
                         { name: '操作区', href: PATH_DASHBOARD.root },
                         { name: 'NFT', href: PATH_DASHBOARD.token.singleTokenMultiTransfer },

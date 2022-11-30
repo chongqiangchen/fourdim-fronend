@@ -1,42 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tool Page
 
-## 1.Install
+### Todo
 
-### npm
-
-```
-npm i
-or
-npm i --legacy-peer-deps
-```
-
-### yarn
-
-```
-yarn install
-```
-
-## 2.Start
-
-```sh
-npm start
-or
-yarn start
-```
-
-## 3.Build
-
-```sh
-npm run build or yarn build
-```
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-
-Your app is ready to be deployed.
-
-## User Guide
-
-You can find detailed instructions on using Create React App and many tips in [its documentation](https://facebook.github.io/create-react-app/).
+- [ ] 提取ABI,ADDRESS到constants中，不再采用atoms
+- [ ] 参考[Uniswap](https://github.com/Uniswap/interface/blob/e4ae705eb1fdb2fe07c17e6a3599df2da0d15d8f/src/hooks/useContract.ts#L48)是否改进Contract的hooks
+- [ ] 完成NFT批量转移页面
+- [ ] 完成Token批量归集页面
+- [ ] 完成Token授权页面（暂定BSC）
+- [ ] 重构MetaMask等钱包连接弹窗

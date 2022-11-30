@@ -25,6 +25,16 @@ const navConfig = [
         title: '账号货币信息',
         path: PATH_DASHBOARD.general.home,
         icon: ICONS.dashboard
+      },
+      {
+        title: '货币授权（开发中）',
+        path: '/404',
+        icon: ICONS.analytics
+      },
+      {
+        title: 'NFT授权（开发中）',
+        path: '/404',
+        icon: ICONS.analytics
       }
     ]
   },
